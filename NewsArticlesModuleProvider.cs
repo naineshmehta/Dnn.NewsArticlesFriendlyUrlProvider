@@ -477,8 +477,8 @@ namespace DNN.Modules.NewsArticles.ModuleFriendlyUrlProvider
                     if (friendlyUrl != null)
                     {
                         //now merge with the friendly url for the selected page
-                        DotNetNuke.Entities.Portals.PortalAliasInfo alias = DotNetNuke.Entities.Portals.PortalAliasController.GetPortalAliasInfo(httpAlias);
-                        DotNetNuke.Entities.Portals.PortalSettings ps = new DotNetNuke.Entities.Portals.PortalSettings(tabId, alias);
+                        PortalAliasInfo alias = PortalAliasController.GetPortalAliasInfo(httpAlias);
+                        PortalSettings ps = new PortalSettings(tabId, alias);
                         if (pagePath != null)
                             friendlyUrl += this.EnsureLeadingChar("/", pagePath);
                         string baseUrl = "";

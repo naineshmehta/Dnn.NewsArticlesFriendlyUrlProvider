@@ -73,9 +73,6 @@
     <Compile Include="NewsArticlesModuleProviderInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptController.cs" />
-    <Compile Include="Settings.ascx.cs">
-      <DependentUpon>Settings.ascx</DependentUpon>
-    </Compile>
     <Compile Include="UrlController.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,7 +80,6 @@
     <Content Include="Documentation\Documentation.html" />
     <Content Include="License.txt" />
     <Content Include="ReleaseNotes.txt" />
-    <Content Include="Settings.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BuildScripts\ModulePackage.targets" />
